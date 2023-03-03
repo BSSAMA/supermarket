@@ -1,0 +1,25 @@
+spring:
+  mail:
+    host: smtp.163.com
+    username: songjiahao1999@163.com
+    password: BRBGRXYOHUXWCQIM
+  datasource:
+    url: jdbc:mysql://localhost:3306/supermarket?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+  redis:
+    host: localhost
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  jackson:
+    default-property-inclusion: non_default
+server:
+  port: 8181
+  servlet:
+    session:
+      timeout: 30m
+
